@@ -20,7 +20,7 @@ class TweetViewController: UIViewController, UITextViewDelegate {
         tweetTextView.becomeFirstResponder()
         tweetTextView.delegate = self
         
-        charsLeftLabel.text = "140"
+        charsLeftLabel.text = "180"
     }
     
     func checkRemainingChars() {
