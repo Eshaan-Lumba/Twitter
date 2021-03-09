@@ -178,13 +178,27 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Char count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5Y-AI-Bno">
+                                <rect key="frame" x="10" y="182" width="62.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dkx-YB-GVl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B2Y-da-sgu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="sA5-RO-F2L" firstAttribute="leading" secondItem="B2Y-da-sgu" secondAttribute="leading" id="0Tg-fb-L1H"/>
                             <constraint firstItem="sA5-RO-F2L" firstAttribute="top" secondItem="B2Y-da-sgu" secondAttribute="top" id="10L-Sf-r1E"/>
+                            <constraint firstItem="e5Y-AI-Bno" firstAttribute="top" secondItem="sA5-RO-F2L" secondAttribute="bottom" constant="10" id="9GO-rV-qZj"/>
+                            <constraint firstItem="sA5-RO-F2L" firstAttribute="top" secondItem="B2Y-da-sgu" secondAttribute="top" id="e0l-Ko-1of"/>
+                            <constraint firstItem="e5Y-AI-Bno" firstAttribute="leading" secondItem="B2Y-da-sgu" secondAttribute="leading" constant="10" id="fvf-HE-ubp"/>
                             <constraint firstItem="B2Y-da-sgu" firstAttribute="trailing" secondItem="sA5-RO-F2L" secondAttribute="trailing" id="mwh-f7-Z5a"/>
                             <constraint firstItem="sA5-RO-F2L" firstAttribute="leading" secondItem="B2Y-da-sgu" secondAttribute="leading" id="sIV-8l-8rL"/>
+                            <constraint firstItem="sA5-RO-F2L" firstAttribute="trailing" secondItem="B2Y-da-sgu" secondAttribute="trailing" id="zUj-gy-X4L"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="unj-cc-kl2">
@@ -202,6 +216,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="charsLeftLabel" destination="e5Y-AI-Bno" id="1KG-Jc-yr1"/>
                         <outlet property="tweetTextView" destination="sA5-RO-F2L" id="rqY-dk-g5E"/>
                     </connections>
                 </viewController>

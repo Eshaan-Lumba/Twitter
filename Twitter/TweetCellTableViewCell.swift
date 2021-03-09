@@ -21,6 +21,7 @@ class TweetCellTableViewCell: UITableViewCell {
     var tweetId: Int = -1
     
     
+    
     @IBAction func favTweet(_ sender: Any) {
         let toBeFavorited = !favorited
         if (toBeFavorited) {
@@ -68,9 +69,13 @@ class TweetCellTableViewCell: UITableViewCell {
         }
     }
     
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
