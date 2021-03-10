@@ -41,12 +41,30 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="AXW-YI-XeC" kind="presentation" identifier="loginToHome" modalPresentationStyle="fullScreen" id="9GR-VM-Omp"/>
+                        <segue destination="2X5-iX-G1F" kind="presentation" identifier="loginToMain" modalPresentationStyle="fullScreen" id="LLA-0L-wFb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ccr-7H-Gz9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-863" y="146"/>
+            <point key="canvasLocation" x="-470" y="-1343"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="lgB-7O-sYB">
+            <objects>
+                <tabBarController id="2X5-iX-G1F" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iLp-MC-iJ9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="AXW-YI-XeC" kind="relationship" relationship="viewControllers" id="VDT-Wn-afy"/>
+                        <segue destination="D87-ku-1Ky" kind="relationship" relationship="viewControllers" id="qtz-hJ-gbl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="imB-Xw-gga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-469" y="-625"/>
         </scene>
         <!--Home-->
         <scene sceneID="A1v-VX-lKa">
@@ -158,7 +176,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dVe-og-jNb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="146.17691154422789"/>
+            <point key="canvasLocation" x="-1116" y="816"/>
         </scene>
         <!--Tweet View Controller-->
         <scene sceneID="b58-zK-bsQ">
@@ -178,11 +196,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Char count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5Y-AI-Bno">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Char count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5Y-AI-Bno">
                                 <rect key="frame" x="10" y="182" width="62.5" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="dkx-YB-GVl"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -193,9 +209,7 @@
                         <constraints>
                             <constraint firstItem="sA5-RO-F2L" firstAttribute="leading" secondItem="B2Y-da-sgu" secondAttribute="leading" id="0Tg-fb-L1H"/>
                             <constraint firstItem="sA5-RO-F2L" firstAttribute="top" secondItem="B2Y-da-sgu" secondAttribute="top" id="10L-Sf-r1E"/>
-                            <constraint firstItem="e5Y-AI-Bno" firstAttribute="top" secondItem="sA5-RO-F2L" secondAttribute="bottom" constant="10" id="9GO-rV-qZj"/>
                             <constraint firstItem="sA5-RO-F2L" firstAttribute="top" secondItem="B2Y-da-sgu" secondAttribute="top" id="e0l-Ko-1of"/>
-                            <constraint firstItem="e5Y-AI-Bno" firstAttribute="leading" secondItem="B2Y-da-sgu" secondAttribute="leading" constant="10" id="fvf-HE-ubp"/>
                             <constraint firstItem="B2Y-da-sgu" firstAttribute="trailing" secondItem="sA5-RO-F2L" secondAttribute="trailing" id="mwh-f7-Z5a"/>
                             <constraint firstItem="sA5-RO-F2L" firstAttribute="leading" secondItem="B2Y-da-sgu" secondAttribute="leading" id="sIV-8l-8rL"/>
                             <constraint firstItem="sA5-RO-F2L" firstAttribute="trailing" secondItem="B2Y-da-sgu" secondAttribute="trailing" id="zUj-gy-X4L"/>
@@ -222,12 +236,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRc-ar-7UQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2636" y="137.18140929535232"/>
+            <point key="canvasLocation" x="-1116" y="2171"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home-->
         <scene sceneID="5WF-Py-xZV">
             <objects>
                 <navigationController id="AXW-YI-XeC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home-icon" id="DPO-zf-9yO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EWZ-WC-MPi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -245,7 +260,58 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gda-eC-JVO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-14" y="146"/>
+            <point key="canvasLocation" x="-1116" y="146"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="g2g-Wg-4oa">
+            <objects>
+                <viewController id="edi-GM-X4b" customClass="ProfileViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V69-DZ-Ccc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="otR-KL-qfh">
+                                <rect key="frame" x="10" y="54" width="126" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="GCv-xf-et5"/>
+                                    <constraint firstAttribute="height" constant="129" id="pDa-zw-xgk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58t-az-1gt">
+                                <rect key="frame" x="141" y="54" width="224" height="27.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaM-1m-kEF">
+                                <rect key="frame" x="150" y="107" width="209" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7oL-7f-oOR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="58t-az-1gt" firstAttribute="top" secondItem="7oL-7f-oOR" secondAttribute="top" constant="10" id="AjN-0Q-uCD"/>
+                            <constraint firstItem="otR-KL-qfh" firstAttribute="top" secondItem="7oL-7f-oOR" secondAttribute="top" constant="10" id="Ir6-gs-16m"/>
+                            <constraint firstItem="otR-KL-qfh" firstAttribute="leading" secondItem="7oL-7f-oOR" secondAttribute="leading" constant="10" id="LDA-oR-t3u"/>
+                            <constraint firstItem="CaM-1m-kEF" firstAttribute="leading" secondItem="otR-KL-qfh" secondAttribute="trailing" constant="5" id="kdV-f4-r2m"/>
+                            <constraint firstItem="7oL-7f-oOR" firstAttribute="trailing" secondItem="58t-az-1gt" secondAttribute="trailing" constant="10" id="muv-J4-eW4"/>
+                            <constraint firstItem="CaM-1m-kEF" firstAttribute="top" secondItem="58t-az-1gt" secondAttribute="bottom" constant="10" id="q13-6P-x3a"/>
+                            <constraint firstItem="58t-az-1gt" firstAttribute="leading" secondItem="otR-KL-qfh" secondAttribute="trailing" constant="5" id="ypy-WV-wM6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="rf5-1x-6BP"/>
+                    <connections>
+                        <outlet property="profileImageView" destination="otR-KL-qfh" id="epc-eW-Oai"/>
+                        <outlet property="userBioLabel" destination="CaM-1m-kEF" id="a5S-aC-Xle"/>
+                        <outlet property="userNameLabel" destination="58t-az-1gt" id="Xia-KJ-aQj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6W-dl-Q48" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="316" y="814.54272863568224"/>
         </scene>
         <!--Tweet Navigation Controller-->
         <scene sceneID="l2D-vk-h1i">
@@ -264,11 +330,36 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNG-lj-ife" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1696.8" y="137.18140929535232"/>
+            <point key="canvasLocation" x="-1116" y="1500"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="og1-fX-oD3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D87-ku-1Ky" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile-Icon" id="U7c-bL-ceT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mux-fT-DyT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.48494630820000001" green="0.73091333410000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="edi-GM-X4b" kind="relationship" relationship="rootViewController" id="85I-mt-c7s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eu6-AX-eGn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="316" y="155.17241379310346"/>
         </scene>
     </scenes>
     <resources>
         <image name="favor-icon" width="30" height="30"/>
+        <image name="home-icon" width="30" height="30"/>
+        <image name="profile-Icon" width="26" height="26"/>
         <image name="retweet-icon" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

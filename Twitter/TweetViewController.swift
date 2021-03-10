@@ -20,11 +20,11 @@ class TweetViewController: UIViewController, UITextViewDelegate {
         tweetTextView.becomeFirstResponder()
         tweetTextView.delegate = self
         
-        charsLeftLabel.text = "180"
+        charsLeftLabel.text = "280"
     }
     
     func checkRemainingChars() {
-        let allowedChars = 180
+        let allowedChars = 280
         let charsInTextView = -tweetTextView.text.count
         
         let remainingChars = allowedChars + charsInTextView
@@ -33,11 +33,11 @@ class TweetViewController: UIViewController, UITextViewDelegate {
             charsLeftLabel.textColor = UIColor.black
         }
         
-        if remainingChars <= 20 {
+        if remainingChars <= 40 {
             charsLeftLabel.textColor = UIColor.orange
         }
         
-        if remainingChars <= 10 {
+        if remainingChars <= 20 {
             charsLeftLabel.textColor = UIColor.red
         }
         
@@ -54,7 +54,7 @@ class TweetViewController: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func tweet(_ sender: Any) {
-        let allowedChars = 180
+        let allowedChars = 280
         let charsInTextView = -tweetTextView.text.count
         
         let remainingChars = allowedChars + charsInTextView
