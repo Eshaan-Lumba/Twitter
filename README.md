@@ -6,6 +6,8 @@ User can log in and log out of their account, and stay logged in across restarts
 When composing a tweet, user sees a countdown for the number of characters remaining for the tweet. User can view their profile in a profile tab.
 Implemented pull to refresh and infinite scrolling.
 
+Made using: Swift, Storyboard
+
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
